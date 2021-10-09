@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+
+    <title>LINKIT | AZ-204</title>
+
+    <meta name="keywords" content="1.0.0.0" />
+    <meta name="author" content="Dick van Straaten" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light p-2 mb-2 border-bottom">
+        <a class="" href="https://linkit.nl" target="_blank">
+            <img src="~/images/linkit-logo-payoff.svg" class="linkit-logo" alt="LINKIT">
+        </a>
+    </nav>
+
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    <footer class="border-top footer text-muted bg-light p-2">
+        <strong>&copy;</strong> @DateTime.Now.Year LINKIT <a href="https://www.linkit.nl/info/privacy" target="_blank">Privacy Policy</a>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+
+
+
+
